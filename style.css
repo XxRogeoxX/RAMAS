@@ -1,3 +1,76 @@
-body { font-family: sans-serif; background-color: #f4f4f4; color: #333; padding: 20px; }
-.comando { background: white; padding: 15px; margin-bottom: 10px; border-left: 5px solid #2ecc71; border-radius: 4px; }
-h1 { color: #2c3e50; }
+/* --- Reinicio básico --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Estilos globales --- */
+body { 
+    font-family: 'Montserrat', sans-serif; /* Tipografía moderna */
+    background-color: #f0fdf4; /* Fondo verde muy claro y fresco */
+    color: #1e293b; /* Color de texto suave */
+    padding: 20px; 
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNhYmQzYzciIGZpbGwtb3BhY2l0eT0iMC4xNSI+PHBhdGggZD0iTTAgMGg0MHY0MEgwVjB6bTIwIDIwaDIwdjIwSDIWMjB6TTAgMjBoMjB2MjBIMFYyMHoyMCAwaDIwdjIwSDIwVjB6Ii8+PC9nPjwvZz48L3N2Zz4='); /* Patrón sutil de fondo */
+}
+
+/* --- Cabecera tropical --- */
+header {
+    background-color: #ff9f43; /* Naranja vibrante como el sol */
+    background-image: linear-gradient(135deg, #ff9f43 0%, #ff6b6b 100%); /* Degradado cálido */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 { 
+    font-family: 'Pacifico', cursive; /* Tipografía estilo caligrafía playera */
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+/* --- Contenedor principal --- */
+#contenedor {
+    max-width: 800px;
+    margin: 0 auto; /* Centrar contenido */
+}
+
+/* --- Estilo de los comandos --- */
+.comando { 
+    background: white; 
+    padding: 20px; 
+    margin-bottom: 15px; 
+    border-left: 8px solid #00d2d3; /* Borde cian vibrante como el mar */
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Sombra suave */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Efecto hover */
+}
+
+.comando:hover {
+    transform: translateY(-3px); /* Se eleva un poco */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.comando h2 { 
+    color: #00cccc; /* Color turquesa para los títulos */
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.comando p {
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+/* --- Pequeños detalles extra --- */
+/* (Opcional) Puedes añadir iconos o imágenes de fondo más adelante */
